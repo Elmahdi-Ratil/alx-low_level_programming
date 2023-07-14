@@ -2,9 +2,9 @@
 
 /**
  * main - print the size of various type
+ *
  * Return: 0
  */
-
 int main(void)
 {
 	int a;
