@@ -3,7 +3,7 @@
  * Auth: MahDev
  */
 #include <stdio.h>
-#include <unsistd.h>
+#include <unistd.h>
 /**
  * main - A c program that prints a line to the standard error
  *
