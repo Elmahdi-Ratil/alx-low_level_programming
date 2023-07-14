@@ -5,10 +5,12 @@
  *
  * Return: 0
  */
+
 int main(void)
 {
 	int a;
 	long int b;
+
 	printf("Size of a char: %lu byte(s)\n", sizeof(char));
 	printf("Size of an int: %lu byte(s)\n", (unsigned long)sizeof(a));
 	printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(b));
