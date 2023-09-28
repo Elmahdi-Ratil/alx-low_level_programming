@@ -30,3 +30,23 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return (sum);
 }
+/**
+ *_pow - calculates the number to power pow
+ *@pow: power
+ *@base: base to base the calculation on
+ *Return: power
+ *
+ */
+unsigned int _pow(unsigned int pow, int base)
+{
+	unsigned int sum = 1;
+
+	if (pow == 0)
+		return (1);
+	while (pow > 0)
+	{
+		sum = sum * base;
+		pow--;
+	}
+	return (sum);
+}
