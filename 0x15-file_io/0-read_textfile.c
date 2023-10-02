@@ -27,11 +27,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!filename)
 		return (0);
 
-	 o = open(filename, O_RDONLY);
-	if ( o == -1)
+	o = open(filename, O_RDONLY);
+	if (o == -1)
 		return (0);
 
-	rb = read( o, buf, letters);
+	rb = read(o, buf, letters);
 	if (rb == -1)
 		return (0);
 
@@ -40,7 +40,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (pb != rb)
 		return (0);
 
-	close( o);
+	close(o);
 
 	return (pb);
 }
